@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#00257f" />
+  <meta name="description"
+    content="Página temporária de atualização dos sistemas do Tribunal de Justiça do Estado do Amapá." />
+  <title>Atualização de sistemas | TJAP</title>
+  <style>
+    :root {
+      --blue: #00257f;
+      --blue-light: #eaf0fc;
+      --ink: #17233c;
+      --muted: #52607a;
+      --surface: #ffffff;
+      --border: #d6e0f4;
+      --background: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100dvh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 28px 20px;
+      color: var(--ink);
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(180deg, #f3f6fc 0, var(--background) 48%);
+    }
+
+    main {
+      width: min(100%, 660px);
+      text-align: center;
+    }
+
+    .brand {
+      display: block;
+      width: min(100%, 390px);
+      height: auto;
+      margin: 0 auto 46px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 18px;
+      color: var(--blue);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 8px;
+      height: 8px;
+      content: "";
+      border-radius: 50%;
+      background: var(--blue);
+      box-shadow: 0 0 0 5px rgba(0, 37, 127, 0.12);
+    }
+
+    h1 {
+      max-width: 590px;
+      margin: 0 auto;
+      font-size: clamp(2rem, 7vw, 3.5rem);
+      line-height: 1.1;
+      letter-spacing: -0.035em;
+    }
+
+    .message {
+      max-width: 540px;
+      margin: 22px auto 34px;
+      color: var(--muted);
+      font-size: clamp(1rem, 2.8vw, 1.15rem);
+      line-height: 1.65;
+    }
+
+    .systems {
+      padding: 24px;
+      text-align: left;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--surface);
+      box-shadow: 0 16px 44px rgba(0, 37, 127, 0.1);
+    }
+
+    .systems h2 {
+      margin: 0 0 16px;
+      color: var(--blue);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    li {
+      padding: 12px 10px;
+      border-radius: 9px;
+      color: var(--ink);
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-align: center;
+      background: var(--blue-light);
+    }
+
+    li::before {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      margin: 0 7px 1px 0;
+      content: "";
+      border-radius: 50%;
+      background: #78c98a;
+    }
+
+    footer {
+      margin-top: 30px;
+      color: #68748a;
+      font-size: 0.83rem;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 24px 16px;
+      }
+
+      .brand {
+        width: min(100%, 310px);
+        margin-bottom: 36px;
+      }
+
+      .systems {
+        padding: 20px 16px;
+      }
+
+      ul {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <img class="brand" src="./assets/tjap-logo-ouro-2025.png" alt="Tribunal de Justiça do Estado do Amapá" />
+
+    <p class="eyebrow">Comunicado importante</p>
+    <h1>Estamos atualizando nossos sistemas</h1>
+    <p class="message">
+      O Tribunal de Justiça do Estado do Amapá está realizando uma atualização
+      técnica. Os demais sistemas estarão disponíveis novamente em alguns instantes.
+    </p>
+
+    <section class="systems" aria-labelledby="available-systems">
+      <h2 id="available-systems">Sistemas disponíveis agora</h2>
+      <ul>
+        <li><a href="https://tucujuris.tjap.jus.br">Tucujuris</a></li>
+        <li><a href="https://pje.tjap.jus.br/1g/">PJe 1º Grau</a></li>
+        <li><a href="https://pje.tjap.jus.br/2g/">PJe 2º Grau</a></li>
+      </ul>
+    </section>
+
+    <footer>Tribunal de Justiça do Estado do Amapá</footer>
+  </main>
+</body>
+
+</html>
